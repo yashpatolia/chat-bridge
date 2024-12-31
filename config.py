@@ -10,5 +10,8 @@ DISCORD_BOT_TOKEN: str = ""
 
 BRIDGE_WEBHOOK: str = ""
 BRIDGE_CHANNEL_ID: int = 0
+
 OFFICER_WEBHOOK: str = ""
 OFFICER_CHANNEL_ID: int = 0
+
+LOGS_WEBHOOK: str = ""
