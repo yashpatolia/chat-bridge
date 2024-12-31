@@ -4,7 +4,7 @@ import os
 import logging
 from javascript import require
 from discord.ext import commands
-from config import OPTIONS, TOKEN
+from config import OPTIONS, DISCORD_BOT_TOKEN
 
 mineflayer = require("mineflayer")
 logging.basicConfig(level=logging.INFO)
@@ -33,7 +33,7 @@ class Client(commands.Bot):
 
 async def run_bot():
     async with Client() as client:
-        await client.start(TOKEN)
+        await client.start(DISCORD_BOT_TOKEN)
 
 
 asyncio.run(run_bot())
