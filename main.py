@@ -13,9 +13,16 @@ class Client(commands.Bot):
     def __init__(self):
         super().__init__(command_prefix="+", intents=discord.Intents.all())
         self.bot = None
+        self.reason = None
 
-    async def start_mineflayer(self):
+    async def start_mineflayer(self, restart: bool = False):
         self.bot = mineflayer.createBot(OPTIONS)
+
+        if restart:
+            await self.reload_extension("cogs.bridge.connections")
+            await self.reload_extension("cogs.bridge.bridge")
+            await self.reload_extension("cogs.bridge.message_handler")
+            self.reason = None
 
     async def setup_hook(self):
         await self.start_mineflayer()
