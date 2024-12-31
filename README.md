@@ -10,27 +10,34 @@ Before running the bot, ensure you have the following installed:
 - Git
 - [Python 3.10+](https://www.python.org/downloads/)
 - Minecraft account
+- Discord Bot (Token)
 
 ## Installation
 
 1. **Clone this repository and enter directory:**
 
    ```bash
-   git clone git@github.com:yashpatolia/chat-bridge.git
-   cd chat-bridge
+   $ git clone git@github.com:yashpatolia/chat-bridge.git
+   $ cd chat-bridge
    ```
 
-2. **Install required packages**
+2. **Rename `example.py` to `config.py`**
+   
+   ```bash
+   $ cp example.py config.py
+   ```
+
+3. **Install required packages**
 
    ```bash
-   pip install -r requirements.txt
+   $ pip install -r requirements.txt
    ```
 
-3. **Edit `config.py` file**
+4. **Edit `config.py` file**
 
    Once you have edited the config file with your settings, you can start the app
-   ```
-   python3 main.py
+   ```bash
+   $ python3 main.py
    ```
 
 ## License
