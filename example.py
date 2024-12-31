@@ -7,6 +7,7 @@ OPTIONS = {
 }
 
 DISCORD_BOT_TOKEN: str = ""
+HYPIXEL_API_KEY: str = ""
 
 BRIDGE_WEBHOOK: str = ""
 BRIDGE_CHANNEL_ID: int = 0
