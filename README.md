@@ -16,7 +16,7 @@ Before running the bot, ensure you have the following installed:
 1. **Clone this repository:**
 
    ```bash
-   git@github.com:yashpatolia/chat-bridge.git
+   git clone git@github.com:yashpatolia/chat-bridge.git
    ```
 
 2. **Edit `config.py` file**
