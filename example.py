@@ -18,3 +18,4 @@ OFFICER_CHANNEL_ID: int = 0
 LOGS_WEBHOOK: str = ""
 
 ADMIN_ROLE: int = 0
+STAFF_ROLE: int = 0
