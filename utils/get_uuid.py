@@ -13,7 +13,7 @@ def get_uuid(username) -> str:
                 return uuid[0]
 
             uuid = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{username}").json()['id']
-            logging.debug(f"[GET] https://api.mojang.com/users/profiles/minecraft/{username}")
+            logging.debug(f"[GET] https://api.mojang.com/users/profiles/minecraft/")
 
             cursor.execute("SELECT ign FROM users WHERE uuid = ?", (uuid,))
             user_check = cursor.fetchone()
